@@ -1,0 +1,109 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla";
+  margin-top: 70px;
+}
+
+.container {
+  width: 70%;
+  border-radius: 5px;
+}
+.container .InformationsInner {
+  background-color: white;
+  width: 100%;
+}
+.container .InformationsInner .InformationsTitle {
+  color: hsl(179, 62%, 43%);
+  font-weight: bolder;
+}
+.container .InformationsInner .DaysInner {
+  color: hsl(71, 73%, 54%);
+  font-weight: bolder;
+}
+.container .InformationsInner .textInformation {
+  color: hsl(218, 22%, 67%);
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.container .PriceInner {
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+}
+.container .PriceInner h1 {
+  color: white;
+  font-weight: bolder;
+}
+.container .PriceInner .price span {
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+}
+.container .PriceInner .price .priceText {
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+}
+.container .PriceInner p {
+  color: hsl(204, 43%, 93%);
+  font-size: 14px;
+}
+.container .PriceInner .SignUpButton {
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(95, 95, 95);
+}
+.container .Footer {
+  width: 100%;
+  background-color: hsl(179, 48%, 57%);
+}
+.container .Footer h1 {
+  font-weight: bolder;
+  color: white;
+}
+.container .Footer p {
+  color: white;
+  font-size: 14px;
+  line-height: 1.5em;
+  width: 65%;
+}
+
+@media (min-width: 1400px) {
+  body .container {
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+  }
+  body .container div:nth-child(1) {
+    grid-column: 1/span 2;
+  }
+  body .container div:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  body .container div:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  body {
+    margin: 0px;
+  }
+  body .container {
+    width: 45%;
+  }
+  body .container .InfortionsPadding .InformationsTitle {
+    font-size: 22px;
+  }
+  body .container .PriceInner {
+    width: 100%;
+    height: 100%;
+  }
+  body .container .PriceInner .PricePadding .SignUpButton {
+    width: 100%;
+  }
+  body .container .Footer {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

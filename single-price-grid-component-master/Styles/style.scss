@@ -1,0 +1,127 @@
+//Primary
+$Cyan: hsl(179, 62%, 43%);
+$BrightYellow: hsl(71, 73%, 54%);
+
+//Neutral
+$LightGray: hsl(204, 43%, 93%);
+$GrayishBlue: hsl(218, 22%, 67%);
+$White: #fff;
+
+body {
+    background-color: $LightGray;
+    font-family: 'Karla';
+    margin-top: 70px;
+}
+
+.container {
+    width: 70%;
+    border-radius: 5px;
+
+    .InformationsInner {
+        background-color: $white;
+        width: 100%;
+        
+        .InformationsTitle {
+            color: $Cyan;
+            font-weight: bolder;
+        }
+
+        .DaysInner {
+            color: $BrightYellow;
+            font-weight: bolder;
+        }
+
+        .textInformation {
+            color: $GrayishBlue;
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+    }
+
+    .PriceInner {
+        background-color: $Cyan;
+        width: 100%;
+
+        h1 {
+            color: $white;
+            font-weight: bolder;
+        }
+
+        .price {
+            span {
+                color: $LightGray;
+                font-size: 14px;
+            }
+
+            .priceText {
+                font-size: 25px;
+                color: $white;
+                font-weight: bolder;
+            }
+        }
+
+        p {
+            color: $LightGray;
+            font-size: 14px;
+        }
+
+        .SignUpButton {
+            width: 100%;
+            background-color: $BrightYellow;
+            height: 40px;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgb(95, 95, 95);
+        }
+    }
+
+
+    .Footer {
+        width: 100%;
+        background-color: hsl(179, 48%, 57%);
+
+        h1 {
+            font-weight: bolder;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 14px;
+            line-height: 1.5em;
+            width: 65%;
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    @import './DeskTopGrid';
+
+    body {
+        margin: 0px;
+        .container {
+            width: 45%;
+            .InfortionsPadding{
+                .InformationsTitle{
+                    font-size: 22px;
+                    
+                }
+            }
+
+            .PriceInner {
+                width: 100%;
+                height: 100%;
+
+                .PricePadding{                    
+                    .SignUpButton {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .Footer {
+                width: 100%;
+            }
+        }
+    }
+}

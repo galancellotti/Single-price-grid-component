@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.container .InformationsInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  gap: 2em;
+}
+.container .InformationsInner .InfortionsPadding {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 35px;
+}
+.container .PriceInner {
+  display: flex;
+}
+.container .PriceInner .PricePadding {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: space-between;
+  gap: 1em;
+  width: 100%;
+  padding: 35px;
+}
+.container .PriceInner .PricePadding .price {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .PriceInner .PricePadding .price .PriceInner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.container .Footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .Footer .footerpadding {
+  padding: 35px;
+}
+.container .Footer .footerpadding p {
+  margin-top: 30px;
+}/*# sourceMappingURL=flexbox.css.map */

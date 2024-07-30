@@ -1,0 +1,75 @@
+@mixin flexBox() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexCollum() {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+body {
+    @include flexBox();
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    .InformationsInner {
+        @include FlexCollum();
+        gap: 2em;
+
+        .InfortionsPadding {
+            @include FlexCollum();
+            padding: 35px;
+        }
+    }
+
+    .PriceInner {
+        display: flex;
+
+        .PricePadding {
+            @include FlexCollum();
+            justify-content: space-between;
+            gap: 1em;
+            width: 100%;
+            padding: 35px;
+
+
+            .price {
+                @include FlexCollum();
+                justify-content: center;
+                align-items: flex-start;
+
+                .PriceInner {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        @include FlexCollum();
+        justify-content: center;
+        align-items: flex-start;
+        
+        .footerpadding {
+            padding: 35px;
+
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
